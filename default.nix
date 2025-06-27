@@ -10,14 +10,20 @@ in
 rec {
   pname = "fillthis";
   version = "0.0.1";
-  #artifacts = rec {
-    #app = ...;
-  #};
+  artifacts = {
+    ssosync = pkgs.buildGoModule {
+      pname = "ssosync";
+      version = "e394fea5f1fc845d0d590347b6fb42406716fee8";
+      src = ./.;
+      vendorHash = "sha256-7px6+K+2byltj58l3vsK2FFAtslZvgLbZ9slfbJf9Uk=";
+    };
+  };
   shell = pkgs.mkShellNoCC {
     packages = with pkgs; [
       git
       gnumake
 
+      artifacts.ssosync
       go
 
       gopls
