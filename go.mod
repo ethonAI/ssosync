@@ -1,6 +1,6 @@
 module github.com/awslabs/ssosync
 
-go 1.17
+go 1.23.0
 
 require (
 	github.com/BurntSushi/toml v1.0.0
@@ -13,7 +13,7 @@ require (
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.2
-	golang.org/x/oauth2 v0.0.0-20210427180440-81ed05c6b58c
+	golang.org/x/oauth2 v0.27.0
 	google.golang.org/api v0.46.0
 )
 
