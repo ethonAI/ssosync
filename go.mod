@@ -9,7 +9,7 @@ require (
 	github.com/golang/mock v1.5.0
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/pkg/errors v0.9.1
-	github.com/sirupsen/logrus v1.8.1
+	github.com/sirupsen/logrus v1.8.3
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.2
